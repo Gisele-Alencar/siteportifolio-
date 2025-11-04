@@ -1,61 +1,59 @@
-/* Reset e estilo base */
+/* RESET GERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* CORPO */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #0f0f0f;
   color: #fff;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
 }
 
 /* CARD PRINCIPAL */
 .profile-card {
   background: #1c1c1c;
+  width: 100%;
+  max-width: 430px;
   border-radius: 20px;
   padding: 30px;
-  width: 100%;
-  max-width: 420px;
-  text-align: left;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* FOTO */
-.profile-card img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* INFORMAÇÕES */
+/* HEADER - FOTO + NOME */
 .profile-header {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
+.profile-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .profile-header h1 {
-  font-size: 1.3rem;
-  margin-bottom: 5px;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .profile-header p {
   font-size: 0.9rem;
-  color: #ccc;
+  color: #aaa;
 }
 
-/* TAGS / BADGES */
+/* BADGES */
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +62,7 @@ body {
 
 .badge {
   background: rgba(255, 255, 255, 0.08);
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 10px;
   font-size: 0.85rem;
   display: flex;
@@ -74,9 +72,9 @@ body {
 
 /* DESCRIÇÃO */
 .description {
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #ddd;
-  line-height: 1.5;
 }
 
 /* BOTÕES */
@@ -89,46 +87,52 @@ body {
 .button-primary {
   background: linear-gradient(135deg, #a66cff, #8b5cf6);
   color: white;
-  padding: 12px 20px;
-  border: none;
+  padding: 14px 20px;
   border-radius: 10px;
-  cursor: pointer;
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
+  flex: 1;
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  padding: 12px 20px;
+  padding: 14px 20px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
+  text-align: center;
+  flex: 1;
 }
 
-/* 💡 Responsividade */
+/* 📱 CELULAR - preencher toda a tela */
 @media (max-width: 600px) {
   body {
+    background: #1c1c1c; /* o fundo e o card se fundem */
     padding: 0;
-    background-color: #0f0f0f;
+    margin: 0;
   }
 
   .profile-card {
     width: 100vw;
     height: 100vh;
-    max-width: none;
     border-radius: 0;
+    max-width: none;
     box-shadow: none;
     justify-content: center;
-    padding: 30px 20px;
+    padding: 40px 25px;
   }
 
   .description {
     font-size: 1rem;
   }
 
+  .buttons {
+    flex-direction: column;
+  }
+
   .button-primary, .button-secondary {
     width: 100%;
-    text-align: center;
   }
 }
