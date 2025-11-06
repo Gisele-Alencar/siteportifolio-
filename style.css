@@ -1,202 +1,167 @@
-/* Fundo e alinhamento */
+
 body {
-  background: linear-gradient(135deg, #0a0a0a, #141414);
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 20px;
+background: linear-gradient(135deg, #0a0a0a, #141414);
+color: #fff;
+font-family: 'Poppins', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+padding: 20px;
 }
 
 /* Card principal */
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 25px;
-  max-width: 400px;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-  text-align: center;
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+padding: 25px;
+max-width: 400px;
+width: 100%;
+backdrop-filter: blur(10px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+text-align: center;
 }
 
 /* Imagem de perfil */
 .profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 20%;
+width: 160px;
+height: 160px;
+border-radius: 50%;
+object-fit: cover;
+object-position: 50% 20%;
 }
 
 /* Título e subtítulo */
 h1 {
-  font-size: 1.5rem;
-  margin: 0;
+font-size: 1.5rem;
+margin: 0;
 }
 
 .subtitle {
-  color: #bbb;
-  font-size: 0.9rem;
-  margin-bottom: 15px;
+color: #bbb;
+font-size: 0.9rem;
+margin-bottom: 15px;
 }
 
 /* Tags */
 .tags {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+margin-bottom: 20px;
 }
 
 .tag {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  width: fit-content;
-  white-space: nowrap;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: background 0.3s ease;
+display: flex;
+align-items: center;
+gap: 8px;
+background: rgba(255, 255, 255, 0.08);
+border: 1px solid rgba(255, 255, 255, 0.15);
+color: #fff;
+padding: 10px 14px;
+border-radius: 12px;
+font-size: 0.95rem;
+width: fit-content;
+white-space: nowrap;
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+transition: background 0.3s ease;
 }
 
 .tag:hover {
-  background: rgba(255, 255, 255, 0.15);
+background: rgba(255, 255, 255, 0.15);
 }
 
 /* Texto principal */
 .about {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
+font-size: 0.95rem;
+line-height: 1.5;
+margin-bottom: 20px;
 }
 
 /* Botões */
 .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+display: flex;
+justify-content: center;
+gap: 10px;
 }
 
 .btn {
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 10px;
-  font-weight: 500;
-  transition: 0.3s ease;
+text-decoration: none;
+padding: 10px 18px;
+border-radius: 10px;
+font-weight: 500;
+transition: 0.3s ease;
 }
 
 .btn.purple {
-  background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
-  color: #fff;
+background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
+color: #fff;
 }
 
 .btn.outline {
-  border: 1px solid rgba(255,255,255,0.3);
-  color: #fff;
+border: 1px solid rgba(255,255,255,0.3);
+color: #fff;
 }
 
 .btn:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
+/* Responsividade */
+@media (max-width: 480px) {
+.card {
+padding: 20px;
+border-radius: 15px;
+}
+
+.tag {
+font-size: 0.9rem;
+padding: 9px 12px;
+}
+
+h1 {
+font-size: 1.3rem;
+}
+}
 /* === ESTILOS DA PÁGINA DE PROJETOS === */
 
 .projects-page {
-  max-width: 1000px;
-  margin: 40px auto;
-  text-align: center;
-  color: #fff;
-  padding: 20px;
+max-width: 1000px;
+margin: 40px auto;
+text-align: center;
+color: #fff;
+padding: 20px;
 }
 
 .projects-page h1 {
-  font-size: 4rem;
-  background: linear-gradient(135deg, #a770ef, #7c708a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  font-family: 'Protest Riot', sans-serif;
-  color: #5d4d6e;
+font-size: 4rem;
+background: linear-gradient(135deg, #a770ef, #7c708a);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 10px;
+font-family: 'Protest Riot', sans-serif;
+color: #5d4d6e;
 }
 
 .projects-page p {
-  color: #bbb;
-  font-size: 1rem;
-  margin-bottom: 30px;
+color: #bbb;
+font-size: 1rem;
+margin-bottom: 30px;
 }
 
-/* GRID DE PROJETOS */
 .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* dois cards lado a lado no PC */
-  gap: 25px;
-  margin-bottom: 40px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 25px;
+margin-bottom: 40px;
 }
 
-/* CARD DE PROJETO */
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 20px;
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-/* LINK COM LOGO FIGMA */
-.project-card a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.project-card a:hover {
-  color: #a770ef;
-}
-
-.project-card img {
-  width: 22px;
-  height: 22px;
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr; /* um embaixo do outro no celular */
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    padding: 20px;
-    border-radius: 15px;
-  }
-
-  .tag {
-    font-size: 0.9rem;
-    padding: 9px 12px;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-  }
-  }
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+padding: 15px;
