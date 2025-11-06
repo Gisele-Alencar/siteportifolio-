@@ -1,128 +1,94 @@
-
+/* ===== Fundo geral ===== */
 body {
-background: linear-gradient(135deg, #0a0a0a, #141414);
-color: #fff;
-font-family: 'Poppins', sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-margin: 0;
-padding: 20px;
+  background: linear-gradient(135deg, #0a0a0a, #141414);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Card principal */
-.card {
-background: rgba(255, 255, 255, 0.05);
-border: 1px solid rgba(255, 255, 255, 0.1);
-border-radius: 20px;
-padding: 25px;
-max-width: 400px;
-width: 100%;
-backdrop-filter: blur(10px);
-box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-text-align: center;
+/* ===== Container da página de projetos ===== */
+.projects-page {
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* Imagem de perfil */
-.profile-img {
-width: 160px;
-height: 160px;
-border-radius: 50%;
-object-fit: cover;
-object-position: 50% 20%;
+/* ===== Título e subtítulo ===== */
+.projects-page h1 {
+  font-size: 2rem;
+  color: #b385f3;
+  margin-bottom: 5px;
 }
 
-/* Título e subtítulo */
-h1 {
-font-size: 1.5rem;
-margin: 0;
+.projects-page p {
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 40px;
 }
 
-.subtitle {
-color: #bbb;
-font-size: 0.9rem;
-margin-bottom: 15px;
+/* ===== Grid dos projetos ===== */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
-/* Tags */
-.tags {
-display: flex;
-flex-direction: column;
-gap: 10px;
-align-items: center;
-margin-bottom: 20px;
+/* ===== Card individual ===== */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  width: 45%;
+  min-width: 320px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tag {
-display: flex;
-align-items: center;
-gap: 8px;
-background: rgba(255, 255, 255, 0.08);
-border: 1px solid rgba(255, 255, 255, 0.15);
-color: #fff;
-padding: 10px 14px;
-border-radius: 12px;
-font-size: 0.95rem;
-width: fit-content;
-white-space: nowrap;
-backdrop-filter: blur(6px);
--webkit-backdrop-filter: blur(6px);
-transition: background 0.3s ease;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-.tag:hover {
-background: rgba(255, 255, 255, 0.15);
+/* ===== Iframes ===== */
+.project-card iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
 }
 
-/* Texto principal */
-.about {
-font-size: 0.95rem;
-line-height: 1.5;
-margin-bottom: 20px;
+/* ===== Títulos e textos dos cards ===== */
+.project-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
-/* Botões */
-.buttons {
-display: flex;
-justify-content: center;
-gap: 10px;
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.4;
 }
 
-.btn {
-text-decoration: none;
-padding: 10px 18px;
-border-radius: 10px;
-font-weight: 500;
-transition: 0.3s ease;
-}
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.btn.purple {
-background: linear-gradient(135deg, #a770ef, #cf8bf3, #fdb99b);
-color: #fff;
-}
-
-.btn.outline {
-border: 1px solid rgba(255,255,255,0.3);
-color: #fff;
-}
-
-.btn:hover {
-transform: scale(1.05);
-}
-
-/* Responsividade */
-@media (max-width: 480px) {
-.card {
-padding: 20px;
-border-radius: 15px;
-}
-
-.tag {
-font-size: 0.9rem;
-padding: 9px 12px;
-}
-
-h1 {
-font-size: 1.3rem;
+  .project-card {
+    width: 90%;
+  }
 }
