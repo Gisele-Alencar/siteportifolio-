@@ -207,4 +207,30 @@ h1 {
   .project-card iframe {
     height: 250px;
   }
+  .project-card {
+  flex: 1 1 300px;
+  max-width: 320px;
+  margin: 10px auto;
 }
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Garante boa responsividade */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 90%;
+  }
+}
+
+/* Evita que o modo desktop no celular “estique” demais */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .project-card {
+    max-width: 45%;
+  }
+}
+
