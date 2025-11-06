@@ -2,7 +2,7 @@
 body {
   background: 
     linear-gradient(135deg, rgba(10, 10, 10, 0.8), rgba(20, 20, 20, 0.8)),
-    url('fundo.jpg'); /* troque pelo nome da sua imagem */
+    url('https://raw.githubusercontent.com/Gisele-Alencar/siteportifolio-/refs/heads/main/Assets/1a45dc8b-f680-49cb-94e6-b5844bf4c8b5.jpeg'); /* troque pelo nome da sua imagem */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
