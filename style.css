@@ -1,11 +1,5 @@
-/* ===== Fundo geral ===== */
-/* Fundo da página (novo) */
 body {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url('https://raw.githubusercontent.com/Gisele-Alencar/siteportifolio-/refs/heads/main/Assets/1a45dc8b-f680-49cb-94e6-b5844bf4c8b5.jpeg') center center fixed;
-  background-size: cover;
-  background-attachment: fixed;
+  background: linear-gradient(135deg, #0a0a0a, #141414);
   color: #fff;
   font-family: 'Poppins', sans-serif;
   display: flex;
