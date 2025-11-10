@@ -69,89 +69,137 @@ p {
   color: #fff;
 }
 
-/* === Habilidades === */
+/* ======== Seção de Habilidades (corrigida) ======== */
+
+.habilidades {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.habilidades h1 {
+  color: #b983ff; /* Roxo igual ao dos botões */
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
 .grid-habilidades {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
+  justify-items: center;
 }
 
 .habilidade {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  padding: 15px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.2s ease;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.2s ease;
 }
 
 .habilidade:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .habilidade img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
 }
 
 .habilidade p {
+  color: #fff;
+  font-size: 0.95rem;
   margin: 0;
-  font-size: 0.9rem;
+}
+/* ======== Seção de Projetos ======== */
+
+.projetos {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-/* === Projetos === */
+.projetos h1 {
+  color: #b983ff; /* Roxo igual ao resto do site */
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.projetos .descricao {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
 .grid-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  gap: 25px;
+  justify-items: center;
 }
 
 .projeto-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
-  transition: 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
 }
 
 .projeto-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(185, 131, 255, 0.3);
 }
 
 .projeto-card img {
   width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
   margin-bottom: 15px;
 }
 
 .projeto-card h3 {
-  color: #c084fc;
-  margin-bottom: 10px;
+  color: #b983ff;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
 }
 
 .projeto-card p {
-  font-size: 0.9rem;
-  color: #ccc;
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
 }
 
 .projeto-card a {
   display: inline-block;
-  margin-top: 10px;
-  color: #c084fc;
+  padding: 8px 14px;
+  background: #b983ff;
+  color: #fff;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
+  transition: background 0.2s ease;
 }
 
 .projeto-card a:hover {
-  text-decoration: underline;
+  background: #9f64ff;
 }
 
 /* === Responsividade === */
