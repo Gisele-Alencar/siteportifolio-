@@ -12,19 +12,25 @@ body {
   padding: 20px;
 }
 
-/* === Card principal (index, projetos, habilidades) === */
-.container,
-.card,
-.projetos,
-.habilidades {
-  width: 90%;
-  max-width: 1000px;
-  background: rgba(20, 20, 20, 0.85); /* fundo cinza translúcido */
+/* Card principal */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  padding: 40px;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
   text-align: center;
-  margin: auto;
+}
+/* Imagem de perfil */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 /* === Títulos === */
