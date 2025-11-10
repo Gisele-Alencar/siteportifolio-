@@ -254,16 +254,63 @@ h1 {
   margin: 0;
 }
 
-.formacao ul {
-  list-style: none;
-  padding: 0;
+/* --- Seção Formação --- */
+.formacao {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.6);
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(100, 0, 200, 0.3);
 }
 
-.formacao li {
-  background: #2a2a2a;
+.formacao h2 {
+  text-align: center;
+  color: #c792ea;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+.linha-formacao {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.linha-formacao:hover {
+  transform: scale(1.02);
+}
+
+.icone {
+  font-size: 24px;
+  color: #b388ff;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.conteudo h3 {
+  color: #fff;
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.periodo {
+  color: #b388ff;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.periodo.destaque {
+  color: #ffb6ff;
+}
+
+.instituicao {
   color: #ccc;
+  font-size: 0.9em;
 }
  }
