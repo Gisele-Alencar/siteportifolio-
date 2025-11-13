@@ -29,8 +29,8 @@ body {
 }
 /* Imagem de perfil */
 .profile-img {
-  width: 102px;
-  height: 110px;
+  width: 100px;
+  height: 106px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
