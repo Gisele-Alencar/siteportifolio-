@@ -5,6 +5,8 @@ body {
   color: #fff;
   font-family: 'Poppins', 'arial';
   font-weight: bold;
+  style:'font-size': 12px ; 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +30,8 @@ body {
 /* Imagem de perfil */
 .profile-img {
   width: 102px;
-  height: 125px;
-  border-radius: 47%;
+  height: 110px;
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
 }
@@ -43,7 +45,7 @@ h1, h2 {
 /* === Texto === */
 p {
   line-height: 1.5;
-  color: #ddd;
+  color: #ddd; 
 }
 
 /* === Botões === */
