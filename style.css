@@ -103,32 +103,77 @@ p {
   justify-items: center;
 }
 
+/* --- SEÇÃO DE HABILIDADES --- */
+.habilidades {
+  width: 100%;
+  max-width: 900px;
+  background: #111;
+  margin: 40px auto 0;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.habilidades h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #c77dff; /* Roxo */
+}
+
+/* Mantém centralizado e bonito */
+.grid-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
 .habilidade {
+  background: #1a1a1a;
+  padding: 18px;
+  width: 120px;
+  border-radius: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255,255,255,0.05);
-  border-radius: 15px;
-  padding: 15px;
-  transition: transform 0.2s ease;
-}
-
-.habilidade:hover {
-  transform: translateY(-5px);
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .habilidade img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
 }
 
 .habilidade p {
+  font-size: 14px;
   color: #fff;
-  font-size: 0.95rem;
-  margin: 0;
+}
+
+/* Hover efeito bonito */
+.habilidade:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 12px rgba(199, 125, 255, 0.7);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 600px) {
+  .habilidades {
+    padding: 18px;
+  }
+
+  .grid-habilidades {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  }
+
+  .habilidade {
+    width: 100px;
+    padding: 14px;
+  }
 }
 /* === ESTILOS DA PÁGINA DE PROJETOS === */
 
