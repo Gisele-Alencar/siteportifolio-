@@ -6,12 +6,14 @@
   <title>Gisele Alencar | Portifólio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
+
+  <!-- CARD PRINCIPAL -->
   <div class="card">
     <img src="https://raw.githubusercontent.com/Gisele-Alencar/siteportifolio-/refs/heads/main/Assets/MYXJ_20251113084650110_save.jpg" alt="Gisele Alencar" class="profile-img">
-    
+
     <h1>Gisele Alencar</h1>
     <p class="subtitle"> Ux/Ui Designer • Data Analyst  • Low Code</p>
 
@@ -24,41 +26,50 @@
     <p class="about">
       Hey , sou a Gisele estudante de Sistemas de Informação, crio interfaces utilizando dados para uma melhor experiencia ao usuario, Desenvolvo projetos acadêmicos e pessoais, Crio prototipos funcionais desde a web ao mobile, pensando em como cada detalhe pode facilitar a vida de quem usa.
     </p>
-   
-  
-  <main class="habilidades">
+  </div>
+
+
+  <!-- ============================= -->
+  <!--        HABILIDADES           -->
+  <!-- ============================= -->
+
+  <section class="habilidades">
     <h1>Habilidades</h1>
 
     <div class="grid-habilidades">
+
       <div class="habilidade">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/figma.svg" alt="Figma">
         <p>Figma</p>
       </div>
 
       <div class="habilidade">
-        <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/framer/framer_128x128.png" alt="Framer">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/framer.svg" alt="Framer">
         <p>Framer</p>
       </div>
 
       <div class="habilidade">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/mysql.svg" alt="MySQL">
         <p>MySQL</p>
       </div>
 
       <div class="habilidade">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/html5.svg" alt="HTML">
         <p>HTML</p>
       </div>
 
+      <div class="habilidade">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/c.svg" alt="C">
+        <p>C</p>
+      </div>
 
       <div class="habilidade">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/python.svg" alt="Python">
         <p>Python</p>
       </div>
 
       <div class="habilidade">
-        <!-- Looker Studio / Data Studio: tentativa via SVG Repo -->
-        <img src="https://www.svgrepo.com/show/354012/looker-icon.svg" alt="Looker Studio">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/looker.svg" alt="Looker Studio">
         <p>Looker Studio</p>
       </div>
 
@@ -68,24 +79,24 @@
       </div>
 
       <div class="habilidade">
-        <!-- Canva (ou "Canvas" caso você quisesse Canva) -->
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/canva.svg" alt="Canva">
-        <p>Canvas</p>
+        <p>Canva</p>
       </div>
 
       <div class="habilidade">
-        <!-- Adobe (genérico). Se preferir um aplicativo específico (Ps/Px/Il), me fala) -->
-        <img src="https://www.svgrepo.com/show/473499/adobe.svg" alt="Adobe">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/adobephotoshop.svg" alt="Adobe">
         <p>Adobe</p>
       </div>
+
     </div>
-  </main>
-    <div class="buttons">
-      <a href="projetos.html" class="btn roxo">Ver Projetos</a>
-      <a href="https://www.instagram.com/giisele_al" class="btn outline">Entrar em contato</a>
-    </div>
-  </div>
-  
+  </section>
+
+
+
+  <!-- ============================= -->
+  <!--     MOMENTO CARREIRA         -->
+  <!-- ============================= -->
+
   <section class="carreira">
     <h1>Momento Carreira</h1>
     <p class="descricao">Eventos, hackathons e momentos importantes da minha jornada profissional.</p>
@@ -93,42 +104,32 @@
     <div class="grid-carreira">
 
       <div class="carreira-card">
-        <img src="Assets/foto1.jpg" alt="Evento 1">
+        <img src="Assets/evento1.jpg" alt="Evento Tech">
         <h3>Evento Tech</h3>
         <p>Participação em meetup focado em inovação e tecnologia.</p>
       </div>
 
       <div class="carreira-card">
-        <img src="Assets/foto2.jpg" alt="Hackathon">
+        <img src="Assets/hackathon.jpg" alt="Hackathon">
         <h3>Hackathon</h3>
         <p>Equipe finalista em solução criativa para negócios.</p>
       </div>
 
       <div class="carreira-card">
-        <img src="Assets/foto3.jpg" alt="Workshop">
+        <img src="Assets/workshop.jpg" alt="Workshop">
         <h3>Workshop</h3>
-        <p>Treinamento prático sobre ferramentas de produtividade.</p>
+        <p>Treinamento prático sobre ferramentas digitais.</p>
       </div>
 
       <div class="carreira-card">
-        <img src="Assets/foto4.jpg" alt="Feira de Inovação">
+        <img src="Assets/feira.jpg" alt="Feira de Inovação">
         <h3>Feira de Inovação</h3>
         <p>Apresentação de ideias para empreendedores e investidores.</p>
       </div>
-</section>
-  <script>
-  const items = document.querySelectorAll('.carreira-card');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.2 });
+    </div>
+  </section>
 
-  items.forEach(item => observer.observe(item));
-  </script>
-  
+
 </body>
-  </html>
+          </html>
